@@ -1,0 +1,1185 @@
+{
+  "baseline_mean": 1.0,
+  "by_scorer_drop": {
+    "exact": 0.373737,
+    "final_answer": 0.14899,
+    "judge": 0.275379,
+    "schema": 0.426136,
+    "tool_choice": 0.25
+  },
+  "current_mean": 0.704122,
+  "improved": [],
+  "mean_drop": 0.295878,
+  "missing_ids": [],
+  "n_baseline": 132,
+  "n_compared": 132,
+  "n_improved": 0,
+  "n_regressed": 83,
+  "n_unchanged": 49,
+  "new_ids": [],
+  "regressed": [
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calculate-002",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calculate-005",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calculate-008",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calculate-013",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calculate-014",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calendar-000",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calendar-007",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calendar-008",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "calendar-011",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "convert-002",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "convert-006",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "convert-007",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "file-002",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "file-003",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "fx-002",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "fx-004",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "fx-005",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "fx-008",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "fx-009",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "inventory-005",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "inventory-006",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "inventory-010",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "inventory-011",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "order-000",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "order-009",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "order-010",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "weather-002",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "weather-003",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "weather-004",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.23,
+      "before": 1.0,
+      "drop": 0.77,
+      "id": "weather-014",
+      "scorer_drop": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "calculate-003",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "calculate-007",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "calculate-015",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "calendar-002",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "calendar-005",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "file-000",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "file-001",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "file-006",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "file-007",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "inventory-004",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "inventory-015",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "order-003",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "order-007",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "order-008",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "ticket-010",
+      "scorer_drop": {
+        "exact": 0.5,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 0.5,
+        "tool_choice": 0.5
+      },
+      "task_id": "ticket"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "weather-000",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "weather-005",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.615,
+      "before": 1.0,
+      "drop": 0.385,
+      "id": "weather-007",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.35,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.629,
+      "before": 1.0,
+      "drop": 0.371,
+      "id": "convert-000",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.21,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.629,
+      "before": 1.0,
+      "drop": 0.371,
+      "id": "convert-005",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.21,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.629,
+      "before": 1.0,
+      "drop": 0.371,
+      "id": "convert-009",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.21,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.629,
+      "before": 1.0,
+      "drop": 0.371,
+      "id": "fx-003",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.21,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.629,
+      "before": 1.0,
+      "drop": 0.371,
+      "id": "fx-006",
+      "scorer_drop": {
+        "exact": 0.666667,
+        "final_answer": 0.0,
+        "judge": 0.21,
+        "schema": 1.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.663,
+      "before": 1.0,
+      "drop": 0.337,
+      "id": "search-001",
+      "scorer_drop": {
+        "exact": 0.5,
+        "final_answer": 0.0,
+        "judge": 0.245,
+        "schema": 0.25,
+        "tool_choice": 0.5
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.663,
+      "before": 1.0,
+      "drop": 0.337,
+      "id": "search-002",
+      "scorer_drop": {
+        "exact": 0.5,
+        "final_answer": 0.0,
+        "judge": 0.245,
+        "schema": 0.25,
+        "tool_choice": 0.5
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.663,
+      "before": 1.0,
+      "drop": 0.337,
+      "id": "search-004",
+      "scorer_drop": {
+        "exact": 0.5,
+        "final_answer": 0.0,
+        "judge": 0.245,
+        "schema": 0.25,
+        "tool_choice": 0.5
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.663,
+      "before": 1.0,
+      "drop": 0.337,
+      "id": "search-006",
+      "scorer_drop": {
+        "exact": 0.5,
+        "final_answer": 0.0,
+        "judge": 0.245,
+        "schema": 0.25,
+        "tool_choice": 0.5
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.663,
+      "before": 1.0,
+      "drop": 0.337,
+      "id": "search-010",
+      "scorer_drop": {
+        "exact": 0.5,
+        "final_answer": 0.0,
+        "judge": 0.245,
+        "schema": 0.25,
+        "tool_choice": 0.5
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "calculate-004",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calculate"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "calendar-001",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "calendar-004",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "calendar-006",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "calendar"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "convert-010",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "convert"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "file-004",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "file-005",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "file"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "fx-001",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "fx"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "inventory-002",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "inventory-007",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "inventory-012",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "inventory-013",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "inventory-014",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "inventory"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "order-001",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "order-006",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "order"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "search-009",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "weather-008",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.77,
+      "before": 1.0,
+      "drop": 0.23,
+      "id": "weather-012",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "weather"
+    },
+    {
+      "after": 0.8075,
+      "before": 1.0,
+      "drop": 0.1925,
+      "id": "search-005",
+      "scorer_drop": {
+        "exact": 0.333333,
+        "final_answer": 0.0,
+        "judge": 0.175,
+        "schema": 0.5,
+        "tool_choice": 0.0
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.8075,
+      "before": 1.0,
+      "drop": 0.1925,
+      "id": "search-007",
+      "scorer_drop": {
+        "exact": 0.333333,
+        "final_answer": 0.0,
+        "judge": 0.175,
+        "schema": 0.5,
+        "tool_choice": 0.0
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.8075,
+      "before": 1.0,
+      "drop": 0.1925,
+      "id": "ticket-000",
+      "scorer_drop": {
+        "exact": 0.333333,
+        "final_answer": 0.0,
+        "judge": 0.175,
+        "schema": 0.5,
+        "tool_choice": 0.0
+      },
+      "task_id": "ticket"
+    },
+    {
+      "after": 0.8075,
+      "before": 1.0,
+      "drop": 0.1925,
+      "id": "ticket-001",
+      "scorer_drop": {
+        "exact": 0.333333,
+        "final_answer": 0.0,
+        "judge": 0.175,
+        "schema": 0.5,
+        "tool_choice": 0.0
+      },
+      "task_id": "ticket"
+    },
+    {
+      "after": 0.8075,
+      "before": 1.0,
+      "drop": 0.1925,
+      "id": "ticket-004",
+      "scorer_drop": {
+        "exact": 0.333333,
+        "final_answer": 0.0,
+        "judge": 0.175,
+        "schema": 0.5,
+        "tool_choice": 0.0
+      },
+      "task_id": "ticket"
+    },
+    {
+      "after": 0.808333,
+      "before": 1.0,
+      "drop": 0.191667,
+      "id": "search-003",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 0.833333,
+        "judge": 0.25,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "search"
+    },
+    {
+      "after": 0.808333,
+      "before": 1.0,
+      "drop": 0.191667,
+      "id": "ticket-011",
+      "scorer_drop": {
+        "exact": 0.0,
+        "final_answer": 0.833333,
+        "judge": 0.25,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "task_id": "ticket"
+    }
+  ],
+  "warnings": []
+}

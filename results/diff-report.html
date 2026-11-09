@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trajectory eval diff</title>
+<style>
+:root {
+  --ink: #1c1914;
+  --muted: #5c564c;
+  --rule: #d4cdc2;
+  --paper: #f6f1e8;
+  --pass: #1d6b45;
+  --fail: #9d2c2c;
+  --amber: #8a5a12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.45 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+}
+main { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
+header { border-bottom: 1px solid var(--ink); padding-bottom: 16px; margin-bottom: 24px; }
+.kicker {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font: 12px/1.4 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+h1 { font-size: 32px; font-weight: 600; margin: 0; }
+h2 { font-size: 20px; margin: 28px 0 8px; }
+.mean { font: 56px/1 ui-monospace, Menlo, Consolas, monospace; margin: 12px 0 4px; }
+.sub, .note { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 12px/1.3 ui-monospace, Menlo, Consolas, monospace; font-weight: 600; }
+code, pre { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 13px; }
+pre {
+  background: #fff;
+  border: 1px solid var(--rule);
+  padding: 10px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.pass { color: var(--pass); }
+.fail { color: var(--fail); }
+.amber { color: var(--amber); }
+.bars { display: grid; gap: 6px; margin: 12px 0 20px; }
+.bar-row { display: grid; grid-template-columns: 120px 1fr 64px; gap: 8px; align-items: center; }
+.track { background: #e4ddd2; height: 8px; }
+.fill { background: var(--ink); height: 8px; }
+details { border-top: 1px solid var(--rule); padding: 8px 0; }
+summary { cursor: pointer; }
+ul.warn { padding-left: 18px; }
+footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  .mean { font-size: 40px; }
+  .bar-row { grid-template-columns: 1fr; }
+  main { padding: 20px 14px 48px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class='kicker'>trajectory-eval-harness · synthetic data · run diff</p>
+<h1>results/baseline.json → results/regressed.json</h1>
+<p class='mean'>+0.2959</p>
+<p class='sub'>Suite mean 1.0000 → 0.7041. 83 regressed, 0 improved, 49 unchanged. Negative drop is an improvement. The sign on the figure above is baseline minus current.</p>
+</header>
+<h2>Scorer movement</h2>
+<table><thead><tr><th>Scorer</th><th>Drop (baseline − current)</th></tr></thead><tbody>
+<tr><td>tool_choice</td><td>0.2500</td></tr>
+<tr><td>exact</td><td>0.3737</td></tr>
+<tr><td>schema</td><td>0.4261</td></tr>
+<tr><td>final_answer</td><td>0.1490</td></tr>
+<tr><td>judge</td><td>0.2754</td></tr>
+</tbody></table>
+<h2>Regressed</h2>
+<table><thead><tr><th>Id</th><th>Before</th><th>After</th><th>Drop</th><th>Scorer drop</th></tr></thead><tbody>
+<tr><td><code>calculate-002</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calculate-005</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calculate-008</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calculate-013</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calculate-014</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calendar-000</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calendar-007</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calendar-008</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calendar-011</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>convert-002</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>convert-006</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>convert-007</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>file-002</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>file-003</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>fx-002</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>fx-004</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>fx-005</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>fx-008</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>fx-009</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>inventory-005</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>inventory-006</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>inventory-010</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>inventory-011</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>order-000</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>order-009</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>order-010</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>weather-002</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>weather-003</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>weather-004</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>weather-014</code></td><td>1.0000</td><td>0.2300</td><td class='fail'>0.7700</td><td>tool_choice +1.00, exact +1.00, schema +1.00, judge +0.70</td></tr>
+<tr><td><code>calculate-003</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>calculate-007</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>calculate-015</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>calendar-002</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>calendar-005</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>file-000</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>file-001</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>file-006</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>file-007</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>inventory-004</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>inventory-015</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>order-003</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>order-007</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>order-008</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>ticket-010</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>tool_choice +0.50, exact +0.50, schema +0.50, judge +0.35</td></tr>
+<tr><td><code>weather-000</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>weather-005</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>weather-007</code></td><td>1.0000</td><td>0.6150</td><td class='fail'>0.3850</td><td>exact +0.67, schema +1.00, judge +0.35</td></tr>
+<tr><td><code>convert-000</code></td><td>1.0000</td><td>0.6290</td><td class='fail'>0.3710</td><td>exact +0.67, schema +1.00, judge +0.21</td></tr>
+<tr><td><code>convert-005</code></td><td>1.0000</td><td>0.6290</td><td class='fail'>0.3710</td><td>exact +0.67, schema +1.00, judge +0.21</td></tr>
+<tr><td><code>convert-009</code></td><td>1.0000</td><td>0.6290</td><td class='fail'>0.3710</td><td>exact +0.67, schema +1.00, judge +0.21</td></tr>
+<tr><td><code>fx-003</code></td><td>1.0000</td><td>0.6290</td><td class='fail'>0.3710</td><td>exact +0.67, schema +1.00, judge +0.21</td></tr>
+<tr><td><code>fx-006</code></td><td>1.0000</td><td>0.6290</td><td class='fail'>0.3710</td><td>exact +0.67, schema +1.00, judge +0.21</td></tr>
+<tr><td><code>search-001</code></td><td>1.0000</td><td>0.6630</td><td class='fail'>0.3370</td><td>tool_choice +0.50, exact +0.50, schema +0.25, judge +0.24</td></tr>
+<tr><td><code>search-002</code></td><td>1.0000</td><td>0.6630</td><td class='fail'>0.3370</td><td>tool_choice +0.50, exact +0.50, schema +0.25, judge +0.24</td></tr>
+<tr><td><code>search-004</code></td><td>1.0000</td><td>0.6630</td><td class='fail'>0.3370</td><td>tool_choice +0.50, exact +0.50, schema +0.25, judge +0.24</td></tr>
+<tr><td><code>search-006</code></td><td>1.0000</td><td>0.6630</td><td class='fail'>0.3370</td><td>tool_choice +0.50, exact +0.50, schema +0.25, judge +0.24</td></tr>
+<tr><td><code>search-010</code></td><td>1.0000</td><td>0.6630</td><td class='fail'>0.3370</td><td>tool_choice +0.50, exact +0.50, schema +0.25, judge +0.24</td></tr>
+<tr><td><code>calculate-004</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>calendar-001</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>calendar-004</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>calendar-006</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>convert-010</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>file-004</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>file-005</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>fx-001</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>inventory-002</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>inventory-007</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>inventory-012</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>inventory-013</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>inventory-014</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>order-001</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>order-006</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>search-009</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>weather-008</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>weather-012</code></td><td>1.0000</td><td>0.7700</td><td class='fail'>0.2300</td><td>final_answer +1.00, judge +0.30</td></tr>
+<tr><td><code>search-005</code></td><td>1.0000</td><td>0.8075</td><td class='amber'>0.1925</td><td>exact +0.33, schema +0.50, judge +0.17</td></tr>
+<tr><td><code>search-007</code></td><td>1.0000</td><td>0.8075</td><td class='amber'>0.1925</td><td>exact +0.33, schema +0.50, judge +0.17</td></tr>
+<tr><td><code>ticket-000</code></td><td>1.0000</td><td>0.8075</td><td class='amber'>0.1925</td><td>exact +0.33, schema +0.50, judge +0.17</td></tr>
+<tr><td><code>ticket-001</code></td><td>1.0000</td><td>0.8075</td><td class='amber'>0.1925</td><td>exact +0.33, schema +0.50, judge +0.17</td></tr>
+<tr><td><code>ticket-004</code></td><td>1.0000</td><td>0.8075</td><td class='amber'>0.1925</td><td>exact +0.33, schema +0.50, judge +0.17</td></tr>
+<tr><td><code>search-003</code></td><td>1.0000</td><td>0.8083</td><td class='amber'>0.1917</td><td>final_answer +0.83, judge +0.25</td></tr>
+<tr><td><code>ticket-011</code></td><td>1.0000</td><td>0.8083</td><td class='amber'>0.1917</td><td>final_answer +0.83, judge +0.25</td></tr>
+</tbody></table>
+<footer>Synthetic trajectories. The mock judge is lexical overlap, not a language model. Scores are measurements of the agents in this repository against the committed golden file.</footer>
+</main>
+</body>
+</html>

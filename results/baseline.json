@@ -1,0 +1,3103 @@
+{
+  "agent": "sample",
+  "by_scorer": {
+    "exact": 1.0,
+    "final_answer": 1.0,
+    "judge": 1.0,
+    "schema": 1.0,
+    "tool_choice": 1.0
+  },
+  "command": "python -m trajeval eval --golden data/golden.jsonl --agent sample --out results/baseline.json",
+  "extra_candidate_ids": [],
+  "harness": "trajectory-eval-harness",
+  "judge": {
+    "is_mock": true,
+    "name": "mock"
+  },
+  "mean": 1.0,
+  "n": 132,
+  "seed": 0,
+  "source": "synthetic",
+  "trajectories": [
+    {
+      "id": "weather-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-012",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-013",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-014",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-015",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "file-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "calculate-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-012",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-013",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-014",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-015",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "search-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "calendar-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "inventory-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-012",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-013",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-014",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-015",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "convert-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "ticket-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "order-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "fx-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    }
+  ],
+  "version": "0.1.0",
+  "weights": {
+    "exact": 0.3,
+    "final_answer": 0.2,
+    "judge": 0.1,
+    "schema": 0.15,
+    "tool_choice": 0.25
+  }
+}

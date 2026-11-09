@@ -1,0 +1,3844 @@
+{
+  "agent": "regressed",
+  "by_scorer": {
+    "exact": 0.626263,
+    "final_answer": 0.85101,
+    "judge": 0.724621,
+    "schema": 0.573864,
+    "tool_choice": 0.75
+  },
+  "command": "python -m trajeval eval --golden data/golden.jsonl --agent regressed --out results/regressed.json",
+  "extra_candidate_ids": [],
+  "harness": "trajectory-eval-harness",
+  "judge": {
+    "is_mock": true,
+    "name": "mock"
+  },
+  "mean": 0.704122,
+  "n": 132,
+  "seed": 0,
+  "source": "synthetic",
+  "trajectories": [
+    {
+      "id": "weather-000",
+      "notes": [
+        "arguments: expected {\"city\":\"Paris\"}, got {}",
+        "observation: expected {\"city\":\"Paris\",\"condition\":\"cloudy\",\"temp_c\":18}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'city'",
+        "observation schema: $: missing required property 'city'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"city\":\"Paris\"}, got {}",
+            "observation: expected {\"city\":\"Paris\",\"condition\":\"cloudy\",\"temp_c\":18}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'city'",
+            "observation schema: $: missing required property 'city'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-002",
+      "notes": [
+        "missing step: expected get_weather"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected get_weather"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-003",
+      "notes": [
+        "tool: expected get_weather, got search_web",
+        "arguments: expected {\"city\":\"Cairo\"}, got {\"query\":\"What is the weather in Cairo right now?\"}",
+        "observation: expected {\"city\":\"Cairo\",\"condition\":\"clear\",\"temp_c\":31}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'city'",
+        "observation schema: $: missing required property 'city'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected get_weather, got search_web",
+            "arguments: expected {\"city\":\"Cairo\"}, got {\"query\":\"What is the weather in Cairo right now?\"}",
+            "observation: expected {\"city\":\"Cairo\",\"condition\":\"clear\",\"temp_c\":31}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'city'",
+            "observation schema: $: missing required property 'city'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-004",
+      "notes": [
+        "tool: expected get_weather, got search_web",
+        "arguments: expected {\"city\":\"Tokyo\"}, got {\"query\":\"Look up the current conditions for Tokyo.\"}",
+        "observation: expected {\"city\":\"Tokyo\",\"condition\":\"rain\",\"temp_c\":21}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'city'",
+        "observation schema: $: missing required property 'city'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected get_weather, got search_web",
+            "arguments: expected {\"city\":\"Tokyo\"}, got {\"query\":\"Look up the current conditions for Tokyo.\"}",
+            "observation: expected {\"city\":\"Tokyo\",\"condition\":\"rain\",\"temp_c\":21}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'city'",
+            "observation schema: $: missing required property 'city'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-005",
+      "notes": [
+        "arguments: expected {\"city\":\"Seattle\"}, got {}",
+        "observation: expected {\"city\":\"Seattle\",\"condition\":\"rain\",\"temp_c\":13}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'city'",
+        "observation schema: $: missing required property 'city'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"city\":\"Seattle\"}, got {}",
+            "observation: expected {\"city\":\"Seattle\",\"condition\":\"rain\",\"temp_c\":13}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'city'",
+            "observation schema: $: missing required property 'city'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-007",
+      "notes": [
+        "arguments: expected {\"city\":\"Reykjavik\"}, got {}",
+        "observation: expected {\"city\":\"Reykjavik\",\"condition\":\"wind\",\"temp_c\":7}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'city'",
+        "observation schema: $: missing required property 'city'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"city\":\"Reykjavik\"}, got {}",
+            "observation: expected {\"city\":\"Reykjavik\",\"condition\":\"wind\",\"temp_c\":7}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'city'",
+            "observation schema: $: missing required property 'city'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-008",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-012",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-013",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-014",
+      "notes": [
+        "missing step: expected get_weather"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected get_weather"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "weather-015",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "weather"
+    },
+    {
+      "id": "file-000",
+      "notes": [
+        "arguments: expected {\"path\":\"notes/readme.txt\"}, got {}",
+        "observation: expected {\"path\":\"notes/readme.txt\",\"text\":\"Ship the eval before the demo.\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'path'",
+        "observation schema: $: missing required property 'path'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"path\":\"notes/readme.txt\"}, got {}",
+            "observation: expected {\"path\":\"notes/readme.txt\",\"text\":\"Ship the eval before the demo.\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'path'",
+            "observation schema: $: missing required property 'path'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-001",
+      "notes": [
+        "arguments: expected {\"path\":\"logs/agent.log\"}, got {}",
+        "observation: expected {\"path\":\"logs/agent.log\",\"text\":\"step=3 tool=search status=ok\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'path'",
+        "observation schema: $: missing required property 'path'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"path\":\"logs/agent.log\"}, got {}",
+            "observation: expected {\"path\":\"logs/agent.log\",\"text\":\"step=3 tool=search status=ok\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'path'",
+            "observation schema: $: missing required property 'path'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-002",
+      "notes": [
+        "missing step: expected read_file"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected read_file"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-003",
+      "notes": [
+        "tool: expected read_file, got search_web",
+        "arguments: expected {\"path\":\"config/limits.toml\"}, got {\"query\":\"Read config/limits.toml and quote it.\"}",
+        "observation: expected {\"path\":\"config/limits.toml\",\"text\":\"max_steps = 50\"}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'path'",
+        "observation schema: $: missing required property 'path'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected read_file, got search_web",
+            "arguments: expected {\"path\":\"config/limits.toml\"}, got {\"query\":\"Read config/limits.toml and quote it.\"}",
+            "observation: expected {\"path\":\"config/limits.toml\",\"text\":\"max_steps = 50\"}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'path'",
+            "observation schema: $: missing required property 'path'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-004",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-005",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-006",
+      "notes": [
+        "arguments: expected {\"path\":\"plans/q3.md\"}, got {}",
+        "observation: expected {\"path\":\"plans/q3.md\",\"text\":\"Hold the frontier budget flat.\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'path'",
+        "observation schema: $: missing required property 'path'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"path\":\"plans/q3.md\"}, got {}",
+            "observation: expected {\"path\":\"plans/q3.md\",\"text\":\"Hold the frontier budget flat.\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'path'",
+            "observation schema: $: missing required property 'path'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-007",
+      "notes": [
+        "arguments: expected {\"path\":\"inbox/001.txt\"}, got {}",
+        "observation: expected {\"path\":\"inbox/001.txt\",\"text\":\"Customer asked for a receipt.\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'path'",
+        "observation schema: $: missing required property 'path'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"path\":\"inbox/001.txt\"}, got {}",
+            "observation: expected {\"path\":\"inbox/001.txt\",\"text\":\"Customer asked for a receipt.\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'path'",
+            "observation schema: $: missing required property 'path'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "file-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "file"
+    },
+    {
+      "id": "calculate-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-002",
+      "notes": [
+        "tool: expected calculate, got search_web",
+        "arguments: expected {\"expression\":\"100-37\"}, got {\"query\":\"Evaluate 100-37 and give the number.\"}",
+        "observation: expected {\"expression\":\"100-37\",\"value\":63}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'expression'",
+        "observation schema: $: missing required property 'expression'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected calculate, got search_web",
+            "arguments: expected {\"expression\":\"100-37\"}, got {\"query\":\"Evaluate 100-37 and give the number.\"}",
+            "observation: expected {\"expression\":\"100-37\",\"value\":63}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'expression'",
+            "observation schema: $: missing required property 'expression'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-003",
+      "notes": [
+        "arguments: expected {\"expression\":\"8*7\"}, got {}",
+        "observation: expected {\"expression\":\"8*7\",\"value\":56}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'expression'",
+        "observation schema: $: missing required property 'expression'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"expression\":\"8*7\"}, got {}",
+            "observation: expected {\"expression\":\"8*7\",\"value\":56}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'expression'",
+            "observation schema: $: missing required property 'expression'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-004",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-005",
+      "notes": [
+        "missing step: expected calculate"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected calculate"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-007",
+      "notes": [
+        "arguments: expected {\"expression\":\"2+3*4\"}, got {}",
+        "observation: expected {\"expression\":\"2+3*4\",\"value\":14}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'expression'",
+        "observation schema: $: missing required property 'expression'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"expression\":\"2+3*4\"}, got {}",
+            "observation: expected {\"expression\":\"2+3*4\",\"value\":14}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'expression'",
+            "observation schema: $: missing required property 'expression'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-008",
+      "notes": [
+        "missing step: expected calculate"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected calculate"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-012",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-013",
+      "notes": [
+        "tool: expected calculate, got search_web",
+        "arguments: expected {\"expression\":\"10+20+30\"}, got {\"query\":\"Compute 10+20+30.\"}",
+        "observation: expected {\"expression\":\"10+20+30\",\"value\":60}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'expression'",
+        "observation schema: $: missing required property 'expression'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected calculate, got search_web",
+            "arguments: expected {\"expression\":\"10+20+30\"}, got {\"query\":\"Compute 10+20+30.\"}",
+            "observation: expected {\"expression\":\"10+20+30\",\"value\":60}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'expression'",
+            "observation schema: $: missing required property 'expression'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-014",
+      "notes": [
+        "missing step: expected calculate"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected calculate"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "calculate-015",
+      "notes": [
+        "arguments: expected {\"expression\":\"0-5+8\"}, got {}",
+        "observation: expected {\"expression\":\"0-5+8\",\"value\":3}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'expression'",
+        "observation schema: $: missing required property 'expression'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"expression\":\"0-5+8\"}, got {}",
+            "observation: expected {\"expression\":\"0-5+8\",\"value\":3}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'expression'",
+            "observation schema: $: missing required property 'expression'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calculate"
+    },
+    {
+      "id": "search-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-001",
+      "notes": [
+        "tool: expected search, got search_web",
+        "arguments: expected {\"query\":\"oncall paging rule\"}, got {\"query\":\"Search for oncall paging rule, open the result, and quote it.\"}",
+        "observation: expected {\"title\":\"Oncall runbook\",\"url\":\"https://example.invalid/oncall\"}, got {\"error\":\"unknown tool\"}",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.663,
+      "scorers": {
+        "exact": 0.5,
+        "final_answer": 1.0,
+        "judge": 0.755,
+        "schema": 0.75,
+        "tool_choice": 0.5
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.3,
+          "notes": [
+            "tool: expected search, got search_web",
+            "arguments: expected {\"query\":\"oncall paging rule\"}, got {\"query\":\"Search for oncall paging rule, open the result, and quote it.\"}",
+            "observation: expected {\"title\":\"Oncall runbook\",\"url\":\"https://example.invalid/oncall\"}, got {\"error\":\"unknown tool\"}",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.5,
+          "tool_choice": 0.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-002",
+      "notes": [
+        "tool: expected search, got search_web",
+        "arguments: expected {\"query\":\"eval file format\"}, got {\"query\":\"Look up eval file format and report what the page says.\"}",
+        "observation: expected {\"title\":\"Trajectory format\",\"url\":\"https://example.invalid/format\"}, got {\"error\":\"unknown tool\"}",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.663,
+      "scorers": {
+        "exact": 0.5,
+        "final_answer": 1.0,
+        "judge": 0.755,
+        "schema": 0.75,
+        "tool_choice": 0.5
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.3,
+          "notes": [
+            "tool: expected search, got search_web",
+            "arguments: expected {\"query\":\"eval file format\"}, got {\"query\":\"Look up eval file format and report what the page says.\"}",
+            "observation: expected {\"title\":\"Trajectory format\",\"url\":\"https://example.invalid/format\"}, got {\"error\":\"unknown tool\"}",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.5,
+          "tool_choice": 0.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-003",
+      "notes": [
+        "mock judge: answer overlap 0.17"
+      ],
+      "score": 0.808333,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.166667,
+        "judge": 0.75,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-004",
+      "notes": [
+        "tool: expected search, got search_web",
+        "arguments: expected {\"query\":\"seed constant\"}, got {\"query\":\"Search for seed constant, open the result, and quote it.\"}",
+        "observation: expected {\"title\":\"Seed script\",\"url\":\"https://example.invalid/seed\"}, got {\"error\":\"unknown tool\"}",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.663,
+      "scorers": {
+        "exact": 0.5,
+        "final_answer": 1.0,
+        "judge": 0.755,
+        "schema": 0.75,
+        "tool_choice": 0.5
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.3,
+          "notes": [
+            "tool: expected search, got search_web",
+            "arguments: expected {\"query\":\"seed constant\"}, got {\"query\":\"Search for seed constant, open the result, and quote it.\"}",
+            "observation: expected {\"title\":\"Seed script\",\"url\":\"https://example.invalid/seed\"}, got {\"error\":\"unknown tool\"}",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.5,
+          "tool_choice": 0.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-005",
+      "notes": [
+        "arguments: expected {\"query\":\"receipt request\"}, got {}",
+        "observation: expected {\"title\":\"Inbox note\",\"url\":\"https://example.invalid/inbox\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'query'",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.8075,
+      "scorers": {
+        "exact": 0.666667,
+        "final_answer": 1.0,
+        "judge": 0.825,
+        "schema": 0.5,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"query\":\"receipt request\"}, got {}",
+            "observation: expected {\"title\":\"Inbox note\",\"url\":\"https://example.invalid/inbox\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'query'",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-006",
+      "notes": [
+        "tool: expected search, got search_web",
+        "arguments: expected {\"query\":\"city table header\"}, got {\"query\":\"Find the note about city table header and quote the page.\"}",
+        "observation: expected {\"title\":\"City table\",\"url\":\"https://example.invalid/cities\"}, got {\"error\":\"unknown tool\"}",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.663,
+      "scorers": {
+        "exact": 0.5,
+        "final_answer": 1.0,
+        "judge": 0.755,
+        "schema": 0.75,
+        "tool_choice": 0.5
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.3,
+          "notes": [
+            "tool: expected search, got search_web",
+            "arguments: expected {\"query\":\"city table header\"}, got {\"query\":\"Find the note about city table header and quote the page.\"}",
+            "observation: expected {\"title\":\"City table\",\"url\":\"https://example.invalid/cities\"}, got {\"error\":\"unknown tool\"}",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.5,
+          "tool_choice": 0.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-007",
+      "notes": [
+        "arguments: expected {\"query\":\"step limit config\"}, got {}",
+        "observation: expected {\"title\":\"Limits\",\"url\":\"https://example.invalid/limits\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'query'",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.8075,
+      "scorers": {
+        "exact": 0.666667,
+        "final_answer": 1.0,
+        "judge": 0.825,
+        "schema": 0.5,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"query\":\"step limit config\"}, got {}",
+            "observation: expected {\"title\":\"Limits\",\"url\":\"https://example.invalid/limits\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'query'",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-009",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-010",
+      "notes": [
+        "tool: expected search, got search_web",
+        "arguments: expected {\"query\":\"agent log line\"}, got {\"query\":\"Search for agent log line, open the result, and quote it.\"}",
+        "observation: expected {\"title\":\"Agent log\",\"url\":\"https://example.invalid/log\"}, got {\"error\":\"unknown tool\"}",
+        "observation schema: $: missing required property 'title'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.663,
+      "scorers": {
+        "exact": 0.5,
+        "final_answer": 1.0,
+        "judge": 0.755,
+        "schema": 0.75,
+        "tool_choice": 0.5
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.3,
+          "notes": [
+            "tool: expected search, got search_web",
+            "arguments: expected {\"query\":\"agent log line\"}, got {\"query\":\"Search for agent log line, open the result, and quote it.\"}",
+            "observation: expected {\"title\":\"Agent log\",\"url\":\"https://example.invalid/log\"}, got {\"error\":\"unknown tool\"}",
+            "observation schema: $: missing required property 'title'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.5,
+          "tool_choice": 0.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "search-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "search"
+    },
+    {
+      "id": "calendar-000",
+      "notes": [
+        "tool: expected list_events, got search_web",
+        "arguments: expected {\"date\":\"2026-03-02\"}, got {\"query\":\"What is on the calendar for 2026-03-02?\"}",
+        "observation: expected {\"date\":\"2026-03-02\",\"events\":[{\"time\":\"10:00\",\"title\":\"Design review\"}]}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'date'",
+        "observation schema: $: missing required property 'date'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected list_events, got search_web",
+            "arguments: expected {\"date\":\"2026-03-02\"}, got {\"query\":\"What is on the calendar for 2026-03-02?\"}",
+            "observation: expected {\"date\":\"2026-03-02\",\"events\":[{\"time\":\"10:00\",\"title\":\"Design review\"}]}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'date'",
+            "observation schema: $: missing required property 'date'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-001",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-002",
+      "notes": [
+        "arguments: expected {\"date\":\"2026-03-04\"}, got {}",
+        "observation: expected {\"date\":\"2026-03-04\",\"events\":[{\"time\":\"11:00\",\"title\":\"Office hours\"}]}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'date'",
+        "observation schema: $: missing required property 'date'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"date\":\"2026-03-04\"}, got {}",
+            "observation: expected {\"date\":\"2026-03-04\",\"events\":[{\"time\":\"11:00\",\"title\":\"Office hours\"}]}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'date'",
+            "observation schema: $: missing required property 'date'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-004",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-005",
+      "notes": [
+        "arguments: expected {\"date\":\"2026-03-09\"}, got {}",
+        "observation: expected {\"date\":\"2026-03-09\",\"events\":[{\"time\":\"13:00\",\"title\":\"Budget check\"}]}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'date'",
+        "observation schema: $: missing required property 'date'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"date\":\"2026-03-09\"}, got {}",
+            "observation: expected {\"date\":\"2026-03-09\",\"events\":[{\"time\":\"13:00\",\"title\":\"Budget check\"}]}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'date'",
+            "observation schema: $: missing required property 'date'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-006",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-007",
+      "notes": [
+        "tool: expected list_events, got search_web",
+        "arguments: expected {\"date\":\"2026-03-11\"}, got {\"query\":\"Which event is scheduled on 2026-03-11?\"}",
+        "observation: expected {\"date\":\"2026-03-11\",\"events\":[{\"time\":\"10:30\",\"title\":\"Support sync\"}]}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'date'",
+        "observation schema: $: missing required property 'date'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected list_events, got search_web",
+            "arguments: expected {\"date\":\"2026-03-11\"}, got {\"query\":\"Which event is scheduled on 2026-03-11?\"}",
+            "observation: expected {\"date\":\"2026-03-11\",\"events\":[{\"time\":\"10:30\",\"title\":\"Support sync\"}]}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'date'",
+            "observation schema: $: missing required property 'date'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-008",
+      "notes": [
+        "missing step: expected list_events"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected list_events"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "calendar-011",
+      "notes": [
+        "missing step: expected list_events"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected list_events"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "calendar"
+    },
+    {
+      "id": "inventory-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-002",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-004",
+      "notes": [
+        "arguments: expected {\"sku\":\"SKU-104\"}, got {}",
+        "observation: expected {\"name\":\"Linen tape\",\"sku\":\"SKU-104\",\"stock\":64}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'sku'",
+        "observation schema: $: missing required property 'sku'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"sku\":\"SKU-104\"}, got {}",
+            "observation: expected {\"name\":\"Linen tape\",\"sku\":\"SKU-104\",\"stock\":64}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'sku'",
+            "observation schema: $: missing required property 'sku'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-005",
+      "notes": [
+        "tool: expected lookup_sku, got search_web",
+        "arguments: expected {\"sku\":\"SKU-105\"}, got {\"query\":\"What is the on-hand count for SKU-105?\"}",
+        "observation: expected {\"name\":\"Cedar box\",\"sku\":\"SKU-105\",\"stock\":3}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'sku'",
+        "observation schema: $: missing required property 'sku'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected lookup_sku, got search_web",
+            "arguments: expected {\"sku\":\"SKU-105\"}, got {\"query\":\"What is the on-hand count for SKU-105?\"}",
+            "observation: expected {\"name\":\"Cedar box\",\"sku\":\"SKU-105\",\"stock\":3}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'sku'",
+            "observation schema: $: missing required property 'sku'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-006",
+      "notes": [
+        "missing step: expected lookup_sku"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected lookup_sku"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-007",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-010",
+      "notes": [
+        "missing step: expected lookup_sku"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected lookup_sku"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-011",
+      "notes": [
+        "tool: expected lookup_sku, got search_web",
+        "arguments: expected {\"sku\":\"SKU-111\"}, got {\"query\":\"What is the on-hand count for SKU-111?\"}",
+        "observation: expected {\"name\":\"Wool felt\",\"sku\":\"SKU-111\",\"stock\":48}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'sku'",
+        "observation schema: $: missing required property 'sku'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected lookup_sku, got search_web",
+            "arguments: expected {\"sku\":\"SKU-111\"}, got {\"query\":\"What is the on-hand count for SKU-111?\"}",
+            "observation: expected {\"name\":\"Wool felt\",\"sku\":\"SKU-111\",\"stock\":48}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'sku'",
+            "observation schema: $: missing required property 'sku'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-012",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-013",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-014",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "inventory-015",
+      "notes": [
+        "arguments: expected {\"sku\":\"SKU-115\"}, got {}",
+        "observation: expected {\"name\":\"Hemp twine\",\"sku\":\"SKU-115\",\"stock\":140}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'sku'",
+        "observation schema: $: missing required property 'sku'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"sku\":\"SKU-115\"}, got {}",
+            "observation: expected {\"name\":\"Hemp twine\",\"sku\":\"SKU-115\",\"stock\":140}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'sku'",
+            "observation schema: $: missing required property 'sku'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "inventory"
+    },
+    {
+      "id": "convert-000",
+      "notes": [
+        "arguments: expected {\"from_unit\":\"km\",\"to_unit\":\"m\",\"value\":2}, got {\"to_unit\":\"m\",\"value\":2}",
+        "observation: expected {\"converted\":2000,\"from_unit\":\"km\",\"to_unit\":\"m\",\"value\":2}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'from_unit'",
+        "observation schema: $: missing required property 'value'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.629,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.79,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.7,
+          "notes": [
+            "arguments: expected {\"from_unit\":\"km\",\"to_unit\":\"m\",\"value\":2}, got {\"to_unit\":\"m\",\"value\":2}",
+            "observation: expected {\"converted\":2000,\"from_unit\":\"km\",\"to_unit\":\"m\",\"value\":2}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'from_unit'",
+            "observation schema: $: missing required property 'value'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-001",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-002",
+      "notes": [
+        "missing step: expected convert_units"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected convert_units"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-005",
+      "notes": [
+        "arguments: expected {\"from_unit\":\"g\",\"to_unit\":\"kg\",\"value\":2000}, got {\"to_unit\":\"kg\",\"value\":2000}",
+        "observation: expected {\"converted\":2,\"from_unit\":\"g\",\"to_unit\":\"kg\",\"value\":2000}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'from_unit'",
+        "observation schema: $: missing required property 'value'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.629,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.79,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.7,
+          "notes": [
+            "arguments: expected {\"from_unit\":\"g\",\"to_unit\":\"kg\",\"value\":2000}, got {\"to_unit\":\"kg\",\"value\":2000}",
+            "observation: expected {\"converted\":2,\"from_unit\":\"g\",\"to_unit\":\"kg\",\"value\":2000}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'from_unit'",
+            "observation schema: $: missing required property 'value'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-006",
+      "notes": [
+        "missing step: expected convert_units"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected convert_units"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-007",
+      "notes": [
+        "missing step: expected convert_units"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected convert_units"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-009",
+      "notes": [
+        "arguments: expected {\"from_unit\":\"C\",\"to_unit\":\"F\",\"value\":100}, got {\"to_unit\":\"F\",\"value\":100}",
+        "observation: expected {\"converted\":212,\"from_unit\":\"C\",\"to_unit\":\"F\",\"value\":100}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'from_unit'",
+        "observation schema: $: missing required property 'value'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.629,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.79,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.7,
+          "notes": [
+            "arguments: expected {\"from_unit\":\"C\",\"to_unit\":\"F\",\"value\":100}, got {\"to_unit\":\"F\",\"value\":100}",
+            "observation: expected {\"converted\":212,\"from_unit\":\"C\",\"to_unit\":\"F\",\"value\":100}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'from_unit'",
+            "observation schema: $: missing required property 'value'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-010",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "convert-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "convert"
+    },
+    {
+      "id": "ticket-000",
+      "notes": [
+        "arguments: expected {\"text\":\"The app crashes when I export.\"}, got {}",
+        "observation: expected {\"priority\":\"high\",\"queue\":\"engineering\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'text'",
+        "observation schema: $: missing required property 'queue'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.8075,
+      "scorers": {
+        "exact": 0.666667,
+        "final_answer": 1.0,
+        "judge": 0.825,
+        "schema": 0.5,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"text\":\"The app crashes when I export.\"}, got {}",
+            "observation: expected {\"priority\":\"high\",\"queue\":\"engineering\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'text'",
+            "observation schema: $: missing required property 'queue'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-001",
+      "notes": [
+        "arguments: expected {\"text\":\"There is a bug in the total.\"}, got {}",
+        "observation: expected {\"priority\":\"high\",\"queue\":\"engineering\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'text'",
+        "observation schema: $: missing required property 'queue'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.8075,
+      "scorers": {
+        "exact": 0.666667,
+        "final_answer": 1.0,
+        "judge": 0.825,
+        "schema": 0.5,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"text\":\"There is a bug in the total.\"}, got {}",
+            "observation: expected {\"priority\":\"high\",\"queue\":\"engineering\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'text'",
+            "observation schema: $: missing required property 'queue'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-003",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-004",
+      "notes": [
+        "arguments: expected {\"text\":\"I cannot login to the portal.\"}, got {}",
+        "observation: expected {\"priority\":\"high\",\"queue\":\"access\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'text'",
+        "observation schema: $: missing required property 'queue'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.8075,
+      "scorers": {
+        "exact": 0.666667,
+        "final_answer": 1.0,
+        "judge": 0.825,
+        "schema": 0.5,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"text\":\"I cannot login to the portal.\"}, got {}",
+            "observation: expected {\"priority\":\"high\",\"queue\":\"access\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'text'",
+            "observation schema: $: missing required property 'queue'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-006",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-008",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-009",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-010",
+      "notes": [
+        "missing step: expected assign_ticket"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.5,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.5,
+        "tool_choice": 0.5
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 0.0,
+          "index": 1,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected assign_ticket"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "ticket-011",
+      "notes": [
+        "mock judge: answer overlap 0.17"
+      ],
+      "score": 0.808333,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.166667,
+        "judge": 0.75,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        },
+        {
+          "exact": 1.0,
+          "index": 1,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "ticket"
+    },
+    {
+      "id": "order-000",
+      "notes": [
+        "tool: expected lookup_order, got search_web",
+        "arguments: expected {\"order_id\":\"A1000\"}, got {\"query\":\"What is the status of order A1000?\"}",
+        "observation: expected {\"order_id\":\"A1000\",\"status\":\"shipped\",\"total_usd\":42}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'order_id'",
+        "observation schema: $: missing required property 'order_id'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected lookup_order, got search_web",
+            "arguments: expected {\"order_id\":\"A1000\"}, got {\"query\":\"What is the status of order A1000?\"}",
+            "observation: expected {\"order_id\":\"A1000\",\"status\":\"shipped\",\"total_usd\":42}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'order_id'",
+            "observation schema: $: missing required property 'order_id'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-001",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-002",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-003",
+      "notes": [
+        "arguments: expected {\"order_id\":\"A1003\"}, got {}",
+        "observation: expected {\"order_id\":\"A1003\",\"status\":\"shipped\",\"total_usd\":10}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'order_id'",
+        "observation schema: $: missing required property 'order_id'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"order_id\":\"A1003\"}, got {}",
+            "observation: expected {\"order_id\":\"A1003\",\"status\":\"shipped\",\"total_usd\":10}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'order_id'",
+            "observation schema: $: missing required property 'order_id'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-004",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-005",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-006",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-007",
+      "notes": [
+        "arguments: expected {\"order_id\":\"A1007\"}, got {}",
+        "observation: expected {\"order_id\":\"A1007\",\"status\":\"processing\",\"total_usd\":33}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'order_id'",
+        "observation schema: $: missing required property 'order_id'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"order_id\":\"A1007\"}, got {}",
+            "observation: expected {\"order_id\":\"A1007\",\"status\":\"processing\",\"total_usd\":33}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'order_id'",
+            "observation schema: $: missing required property 'order_id'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-008",
+      "notes": [
+        "arguments: expected {\"order_id\":\"A1008\"}, got {}",
+        "observation: expected {\"order_id\":\"A1008\",\"status\":\"delivered\",\"total_usd\":8}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'order_id'",
+        "observation schema: $: missing required property 'order_id'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.615,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.65,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.5,
+          "notes": [
+            "arguments: expected {\"order_id\":\"A1008\"}, got {}",
+            "observation: expected {\"order_id\":\"A1008\",\"status\":\"delivered\",\"total_usd\":8}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'order_id'",
+            "observation schema: $: missing required property 'order_id'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-009",
+      "notes": [
+        "tool: expected lookup_order, got search_web",
+        "arguments: expected {\"order_id\":\"A1009\"}, got {\"query\":\"What is the status of order A1009?\"}",
+        "observation: expected {\"order_id\":\"A1009\",\"status\":\"shipped\",\"total_usd\":56}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'order_id'",
+        "observation schema: $: missing required property 'order_id'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected lookup_order, got search_web",
+            "arguments: expected {\"order_id\":\"A1009\"}, got {\"query\":\"What is the status of order A1009?\"}",
+            "observation: expected {\"order_id\":\"A1009\",\"status\":\"shipped\",\"total_usd\":56}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'order_id'",
+            "observation schema: $: missing required property 'order_id'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-010",
+      "notes": [
+        "missing step: expected lookup_order"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected lookup_order"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "order-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "order"
+    },
+    {
+      "id": "fx-000",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-001",
+      "notes": [
+        "mock judge: answer overlap 0.00"
+      ],
+      "score": 0.77,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 0.0,
+        "judge": 0.7,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-002",
+      "notes": [
+        "tool: expected convert_currency, got search_web",
+        "arguments: expected {\"amount\":92,\"dst\":\"USD\",\"src\":\"EUR\"}, got {\"query\":\"Change 92 EUR into USD.\"}",
+        "observation: expected {\"amount\":92,\"converted\":100,\"dst\":\"USD\",\"src\":\"EUR\"}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'amount'",
+        "observation schema: $: missing required property 'amount'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected convert_currency, got search_web",
+            "arguments: expected {\"amount\":92,\"dst\":\"USD\",\"src\":\"EUR\"}, got {\"query\":\"Change 92 EUR into USD.\"}",
+            "observation: expected {\"amount\":92,\"converted\":100,\"dst\":\"USD\",\"src\":\"EUR\"}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'amount'",
+            "observation schema: $: missing required property 'amount'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-003",
+      "notes": [
+        "arguments: expected {\"amount\":25,\"dst\":\"CAD\",\"src\":\"USD\"}, got {\"dst\":\"CAD\",\"src\":\"USD\"}",
+        "observation: expected {\"amount\":25,\"converted\":34,\"dst\":\"CAD\",\"src\":\"USD\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'amount'",
+        "observation schema: $: missing required property 'amount'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.629,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.79,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.7,
+          "notes": [
+            "arguments: expected {\"amount\":25,\"dst\":\"CAD\",\"src\":\"USD\"}, got {\"dst\":\"CAD\",\"src\":\"USD\"}",
+            "observation: expected {\"amount\":25,\"converted\":34,\"dst\":\"CAD\",\"src\":\"USD\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'amount'",
+            "observation schema: $: missing required property 'amount'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-004",
+      "notes": [
+        "missing step: expected convert_currency"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected convert_currency"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-005",
+      "notes": [
+        "missing step: expected convert_currency"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected convert_currency"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-006",
+      "notes": [
+        "arguments: expected {\"amount\":20,\"dst\":\"GBP\",\"src\":\"EUR\"}, got {\"dst\":\"GBP\",\"src\":\"EUR\"}",
+        "observation: expected {\"amount\":20,\"converted\":17,\"dst\":\"GBP\",\"src\":\"EUR\"}, got {\"error\":\"missing required argument\"}",
+        "argument schema: $: missing required property 'amount'",
+        "observation schema: $: missing required property 'amount'",
+        "mock judge: observation overlap 0.00"
+      ],
+      "score": 0.629,
+      "scorers": {
+        "exact": 0.333333,
+        "final_answer": 1.0,
+        "judge": 0.79,
+        "schema": 0.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 0.333333,
+          "index": 0,
+          "judge": 0.7,
+          "notes": [
+            "arguments: expected {\"amount\":20,\"dst\":\"GBP\",\"src\":\"EUR\"}, got {\"dst\":\"GBP\",\"src\":\"EUR\"}",
+            "observation: expected {\"amount\":20,\"converted\":17,\"dst\":\"GBP\",\"src\":\"EUR\"}, got {\"error\":\"missing required argument\"}",
+            "argument schema: $: missing required property 'amount'",
+            "observation schema: $: missing required property 'amount'",
+            "mock judge: observation overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-007",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-008",
+      "notes": [
+        "tool: expected convert_currency, got search_web",
+        "arguments: expected {\"amount\":15,\"dst\":\"USD\",\"src\":\"CAD\"}, got {\"query\":\"Change 15 CAD into USD.\"}",
+        "observation: expected {\"amount\":15,\"converted\":12,\"dst\":\"USD\",\"src\":\"CAD\"}, got {\"error\":\"unknown tool\"}",
+        "argument schema: $: missing required property 'amount'",
+        "observation schema: $: missing required property 'amount'",
+        "mock judge: arguments overlap 0.00"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "tool: expected convert_currency, got search_web",
+            "arguments: expected {\"amount\":15,\"dst\":\"USD\",\"src\":\"CAD\"}, got {\"query\":\"Change 15 CAD into USD.\"}",
+            "observation: expected {\"amount\":15,\"converted\":12,\"dst\":\"USD\",\"src\":\"CAD\"}, got {\"error\":\"unknown tool\"}",
+            "argument schema: $: missing required property 'amount'",
+            "observation schema: $: missing required property 'amount'",
+            "mock judge: arguments overlap 0.00"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-009",
+      "notes": [
+        "missing step: expected convert_currency"
+      ],
+      "score": 0.23,
+      "scorers": {
+        "exact": 0.0,
+        "final_answer": 1.0,
+        "judge": 0.3,
+        "schema": 0.0,
+        "tool_choice": 0.0
+      },
+      "steps": [
+        {
+          "exact": 0.0,
+          "index": 0,
+          "judge": 0.0,
+          "notes": [
+            "missing step: expected convert_currency"
+          ],
+          "schema": 0.0,
+          "tool_choice": 0.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-010",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    },
+    {
+      "id": "fx-011",
+      "notes": [],
+      "score": 1.0,
+      "scorers": {
+        "exact": 1.0,
+        "final_answer": 1.0,
+        "judge": 1.0,
+        "schema": 1.0,
+        "tool_choice": 1.0
+      },
+      "steps": [
+        {
+          "exact": 1.0,
+          "index": 0,
+          "judge": 1.0,
+          "schema": 1.0,
+          "tool_choice": 1.0
+        }
+      ],
+      "task_id": "fx"
+    }
+  ],
+  "version": "0.1.0",
+  "weights": {
+    "exact": 0.3,
+    "final_answer": 0.2,
+    "judge": 0.1,
+    "schema": 0.15,
+    "tool_choice": 0.25
+  }
+}

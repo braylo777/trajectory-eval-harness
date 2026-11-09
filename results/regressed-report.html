@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trajectory eval — regressed</title>
+<style>
+:root {
+  --ink: #1c1914;
+  --muted: #5c564c;
+  --rule: #d4cdc2;
+  --paper: #f6f1e8;
+  --pass: #1d6b45;
+  --fail: #9d2c2c;
+  --amber: #8a5a12;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.45 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+}
+main { max-width: 960px; margin: 0 auto; padding: 32px 20px 64px; }
+header { border-bottom: 1px solid var(--ink); padding-bottom: 16px; margin-bottom: 24px; }
+.kicker {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font: 12px/1.4 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+h1 { font-size: 32px; font-weight: 600; margin: 0; }
+h2 { font-size: 20px; margin: 28px 0 8px; }
+.mean { font: 56px/1 ui-monospace, Menlo, Consolas, monospace; margin: 12px 0 4px; }
+.sub, .note { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 12px/1.3 ui-monospace, Menlo, Consolas, monospace; font-weight: 600; }
+code, pre { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 13px; }
+pre {
+  background: #fff;
+  border: 1px solid var(--rule);
+  padding: 10px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.pass { color: var(--pass); }
+.fail { color: var(--fail); }
+.amber { color: var(--amber); }
+.bars { display: grid; gap: 6px; margin: 12px 0 20px; }
+.bar-row { display: grid; grid-template-columns: 120px 1fr 64px; gap: 8px; align-items: center; }
+.track { background: #e4ddd2; height: 8px; }
+.fill { background: var(--ink); height: 8px; }
+details { border-top: 1px solid var(--rule); padding: 8px 0; }
+summary { cursor: pointer; }
+ul.warn { padding-left: 18px; }
+footer { margin-top: 36px; color: var(--muted); font-size: 13px; }
+@media (max-width: 640px) {
+  .mean { font-size: 40px; }
+  .bar-row { grid-template-columns: 1fr; }
+  main { padding: 20px 14px 48px; }
+}
+</style>
+</head>
+<body>
+<main>
+<header><p class='kicker'>trajectory-eval-harness · synthetic data · mock judge</p><h1>regressed</h1><p class='mean fail'>0.7041</p><p class='sub'>Suite mean across 132 trajectories. Source label on the run: synthetic.</p></header>
+<p><code>python -m trajeval eval --golden data/golden.jsonl --agent regressed --out results/regressed.json</code></p>
+<h2>Scorers</h2>
+<div class='bars'>
+<div class='bar-row'><span>tool_choice</span><div class='track'><div class='fill' style='width:75.00%'></div></div><span class='fail'>0.7500</span></div>
+<div class='bar-row'><span>exact</span><div class='track'><div class='fill' style='width:62.63%'></div></div><span class='fail'>0.6263</span></div>
+<div class='bar-row'><span>schema</span><div class='track'><div class='fill' style='width:57.39%'></div></div><span class='fail'>0.5739</span></div>
+<div class='bar-row'><span>final_answer</span><div class='track'><div class='fill' style='width:85.10%'></div></div><span class='amber'>0.8510</span></div>
+<div class='bar-row'><span>judge</span><div class='track'><div class='fill' style='width:72.46%'></div></div><span class='fail'>0.7246</span></div>
+</div>
+<h2>Trajectories</h2>
+<table>
+<thead><tr><th>Id</th><th>Task</th><th>Score</th></tr></thead>
+<tbody>
+<tr><td><code>calculate-002</code></td><td>calculate</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calculate-005</code></td><td>calculate</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calculate-008</code></td><td>calculate</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calculate-013</code></td><td>calculate</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calculate-014</code></td><td>calculate</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calendar-000</code></td><td>calendar</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calendar-007</code></td><td>calendar</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calendar-008</code></td><td>calendar</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calendar-011</code></td><td>calendar</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>convert-002</code></td><td>convert</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>convert-006</code></td><td>convert</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>convert-007</code></td><td>convert</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>file-002</code></td><td>file</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>file-003</code></td><td>file</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>fx-002</code></td><td>fx</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>fx-004</code></td><td>fx</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>fx-005</code></td><td>fx</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>fx-008</code></td><td>fx</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>fx-009</code></td><td>fx</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>inventory-005</code></td><td>inventory</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>inventory-006</code></td><td>inventory</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>inventory-010</code></td><td>inventory</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>inventory-011</code></td><td>inventory</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>order-000</code></td><td>order</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>order-009</code></td><td>order</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>order-010</code></td><td>order</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>weather-002</code></td><td>weather</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>weather-003</code></td><td>weather</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>weather-004</code></td><td>weather</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>weather-014</code></td><td>weather</td><td class='fail'>0.2300</td></tr>
+<tr><td><code>calculate-003</code></td><td>calculate</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>calculate-007</code></td><td>calculate</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>calculate-015</code></td><td>calculate</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>calendar-002</code></td><td>calendar</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>calendar-005</code></td><td>calendar</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>file-000</code></td><td>file</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>file-001</code></td><td>file</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>file-006</code></td><td>file</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>file-007</code></td><td>file</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>inventory-004</code></td><td>inventory</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>inventory-015</code></td><td>inventory</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>order-003</code></td><td>order</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>order-007</code></td><td>order</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>order-008</code></td><td>order</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>ticket-010</code></td><td>ticket</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>weather-000</code></td><td>weather</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>weather-005</code></td><td>weather</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>weather-007</code></td><td>weather</td><td class='fail'>0.6150</td></tr>
+<tr><td><code>convert-000</code></td><td>convert</td><td class='fail'>0.6290</td></tr>
+<tr><td><code>convert-005</code></td><td>convert</td><td class='fail'>0.6290</td></tr>
+<tr><td><code>convert-009</code></td><td>convert</td><td class='fail'>0.6290</td></tr>
+<tr><td><code>fx-003</code></td><td>fx</td><td class='fail'>0.6290</td></tr>
+<tr><td><code>fx-006</code></td><td>fx</td><td class='fail'>0.6290</td></tr>
+<tr><td><code>search-001</code></td><td>search</td><td class='fail'>0.6630</td></tr>
+<tr><td><code>search-002</code></td><td>search</td><td class='fail'>0.6630</td></tr>
+<tr><td><code>search-004</code></td><td>search</td><td class='fail'>0.6630</td></tr>
+<tr><td><code>search-006</code></td><td>search</td><td class='fail'>0.6630</td></tr>
+<tr><td><code>search-010</code></td><td>search</td><td class='fail'>0.6630</td></tr>
+<tr><td><code>calculate-004</code></td><td>calculate</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>calendar-001</code></td><td>calendar</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>calendar-004</code></td><td>calendar</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>calendar-006</code></td><td>calendar</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>convert-010</code></td><td>convert</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>file-004</code></td><td>file</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>file-005</code></td><td>file</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>fx-001</code></td><td>fx</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>inventory-002</code></td><td>inventory</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>inventory-007</code></td><td>inventory</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>inventory-012</code></td><td>inventory</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>inventory-013</code></td><td>inventory</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>inventory-014</code></td><td>inventory</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>order-001</code></td><td>order</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>order-006</code></td><td>order</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>search-009</code></td><td>search</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>weather-008</code></td><td>weather</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>weather-012</code></td><td>weather</td><td class='fail'>0.7700</td></tr>
+<tr><td><code>search-005</code></td><td>search</td><td class='amber'>0.8075</td></tr>
+<tr><td><code>search-007</code></td><td>search</td><td class='amber'>0.8075</td></tr>
+<tr><td><code>ticket-000</code></td><td>ticket</td><td class='amber'>0.8075</td></tr>
+<tr><td><code>ticket-001</code></td><td>ticket</td><td class='amber'>0.8075</td></tr>
+<tr><td><code>ticket-004</code></td><td>ticket</td><td class='amber'>0.8075</td></tr>
+<tr><td><code>search-003</code></td><td>search</td><td class='amber'>0.8083</td></tr>
+<tr><td><code>ticket-011</code></td><td>ticket</td><td class='amber'>0.8083</td></tr>
+<tr><td><code>calculate-000</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calculate-001</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calculate-006</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calculate-009</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calculate-010</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calculate-011</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calculate-012</code></td><td>calculate</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calendar-003</code></td><td>calendar</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calendar-009</code></td><td>calendar</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>calendar-010</code></td><td>calendar</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>convert-001</code></td><td>convert</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>convert-003</code></td><td>convert</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>convert-004</code></td><td>convert</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>convert-008</code></td><td>convert</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>convert-011</code></td><td>convert</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>file-008</code></td><td>file</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>file-009</code></td><td>file</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>file-010</code></td><td>file</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>file-011</code></td><td>file</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>fx-000</code></td><td>fx</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>fx-007</code></td><td>fx</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>fx-010</code></td><td>fx</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>fx-011</code></td><td>fx</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>inventory-000</code></td><td>inventory</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>inventory-001</code></td><td>inventory</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>inventory-003</code></td><td>inventory</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>inventory-008</code></td><td>inventory</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>inventory-009</code></td><td>inventory</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>order-002</code></td><td>order</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>order-004</code></td><td>order</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>order-005</code></td><td>order</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>order-011</code></td><td>order</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>search-000</code></td><td>search</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>search-008</code></td><td>search</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>search-011</code></td><td>search</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-002</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-003</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-005</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-006</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-007</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-008</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>ticket-009</code></td><td>ticket</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-001</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-006</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-009</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-010</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-011</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-013</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+<tr><td><code>weather-015</code></td><td>weather</td><td class='pass'>1.0000</td></tr>
+</tbody></table>
+<h2>Failures</h2>
+<details><summary><code>calculate-002</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected calculate, got search_web</li><li>arguments: expected {&quot;expression&quot;:&quot;100-37&quot;}, got {&quot;query&quot;:&quot;Evaluate 100-37 and give the number.&quot;}</li><li>observation: expected {&quot;expression&quot;:&quot;100-37&quot;,&quot;value&quot;:63}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;expression&#x27;</li><li>observation schema: $: missing required property &#x27;expression&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calculate-005</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected calculate</li></ul></li></ul></details>
+<details><summary><code>calculate-008</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected calculate</li></ul></li></ul></details>
+<details><summary><code>calculate-013</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected calculate, got search_web</li><li>arguments: expected {&quot;expression&quot;:&quot;10+20+30&quot;}, got {&quot;query&quot;:&quot;Compute 10+20+30.&quot;}</li><li>observation: expected {&quot;expression&quot;:&quot;10+20+30&quot;,&quot;value&quot;:60}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;expression&#x27;</li><li>observation schema: $: missing required property &#x27;expression&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calculate-014</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected calculate</li></ul></li></ul></details>
+<details><summary><code>calendar-000</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected list_events, got search_web</li><li>arguments: expected {&quot;date&quot;:&quot;2026-03-02&quot;}, got {&quot;query&quot;:&quot;What is on the calendar for 2026-03-02?&quot;}</li><li>observation: expected {&quot;date&quot;:&quot;2026-03-02&quot;,&quot;events&quot;:[{&quot;time&quot;:&quot;10:00&quot;,&quot;title&quot;:&quot;Design review&quot;}]}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;date&#x27;</li><li>observation schema: $: missing required property &#x27;date&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calendar-007</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected list_events, got search_web</li><li>arguments: expected {&quot;date&quot;:&quot;2026-03-11&quot;}, got {&quot;query&quot;:&quot;Which event is scheduled on 2026-03-11?&quot;}</li><li>observation: expected {&quot;date&quot;:&quot;2026-03-11&quot;,&quot;events&quot;:[{&quot;time&quot;:&quot;10:30&quot;,&quot;title&quot;:&quot;Support sync&quot;}]}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;date&#x27;</li><li>observation schema: $: missing required property &#x27;date&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calendar-008</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected list_events</li></ul></li></ul></details>
+<details><summary><code>calendar-011</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected list_events</li></ul></li></ul></details>
+<details><summary><code>convert-002</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected convert_units</li></ul></li></ul></details>
+<details><summary><code>convert-006</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected convert_units</li></ul></li></ul></details>
+<details><summary><code>convert-007</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected convert_units</li></ul></li></ul></details>
+<details><summary><code>file-002</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected read_file</li></ul></li></ul></details>
+<details><summary><code>file-003</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected read_file, got search_web</li><li>arguments: expected {&quot;path&quot;:&quot;config/limits.toml&quot;}, got {&quot;query&quot;:&quot;Read config/limits.toml and quote it.&quot;}</li><li>observation: expected {&quot;path&quot;:&quot;config/limits.toml&quot;,&quot;text&quot;:&quot;max_steps = 50&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;path&#x27;</li><li>observation schema: $: missing required property &#x27;path&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>fx-002</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected convert_currency, got search_web</li><li>arguments: expected {&quot;amount&quot;:92,&quot;dst&quot;:&quot;USD&quot;,&quot;src&quot;:&quot;EUR&quot;}, got {&quot;query&quot;:&quot;Change 92 EUR into USD.&quot;}</li><li>observation: expected {&quot;amount&quot;:92,&quot;converted&quot;:100,&quot;dst&quot;:&quot;USD&quot;,&quot;src&quot;:&quot;EUR&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;amount&#x27;</li><li>observation schema: $: missing required property &#x27;amount&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>fx-004</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected convert_currency</li></ul></li></ul></details>
+<details><summary><code>fx-005</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected convert_currency</li></ul></li></ul></details>
+<details><summary><code>fx-008</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected convert_currency, got search_web</li><li>arguments: expected {&quot;amount&quot;:15,&quot;dst&quot;:&quot;USD&quot;,&quot;src&quot;:&quot;CAD&quot;}, got {&quot;query&quot;:&quot;Change 15 CAD into USD.&quot;}</li><li>observation: expected {&quot;amount&quot;:15,&quot;converted&quot;:12,&quot;dst&quot;:&quot;USD&quot;,&quot;src&quot;:&quot;CAD&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;amount&#x27;</li><li>observation schema: $: missing required property &#x27;amount&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>fx-009</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected convert_currency</li></ul></li></ul></details>
+<details><summary><code>inventory-005</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected lookup_sku, got search_web</li><li>arguments: expected {&quot;sku&quot;:&quot;SKU-105&quot;}, got {&quot;query&quot;:&quot;What is the on-hand count for SKU-105?&quot;}</li><li>observation: expected {&quot;name&quot;:&quot;Cedar box&quot;,&quot;sku&quot;:&quot;SKU-105&quot;,&quot;stock&quot;:3}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;sku&#x27;</li><li>observation schema: $: missing required property &#x27;sku&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>inventory-006</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected lookup_sku</li></ul></li></ul></details>
+<details><summary><code>inventory-010</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected lookup_sku</li></ul></li></ul></details>
+<details><summary><code>inventory-011</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected lookup_sku, got search_web</li><li>arguments: expected {&quot;sku&quot;:&quot;SKU-111&quot;}, got {&quot;query&quot;:&quot;What is the on-hand count for SKU-111?&quot;}</li><li>observation: expected {&quot;name&quot;:&quot;Wool felt&quot;,&quot;sku&quot;:&quot;SKU-111&quot;,&quot;stock&quot;:48}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;sku&#x27;</li><li>observation schema: $: missing required property &#x27;sku&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>order-000</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected lookup_order, got search_web</li><li>arguments: expected {&quot;order_id&quot;:&quot;A1000&quot;}, got {&quot;query&quot;:&quot;What is the status of order A1000?&quot;}</li><li>observation: expected {&quot;order_id&quot;:&quot;A1000&quot;,&quot;status&quot;:&quot;shipped&quot;,&quot;total_usd&quot;:42}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;order_id&#x27;</li><li>observation schema: $: missing required property &#x27;order_id&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>order-009</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected lookup_order, got search_web</li><li>arguments: expected {&quot;order_id&quot;:&quot;A1009&quot;}, got {&quot;query&quot;:&quot;What is the status of order A1009?&quot;}</li><li>observation: expected {&quot;order_id&quot;:&quot;A1009&quot;,&quot;status&quot;:&quot;shipped&quot;,&quot;total_usd&quot;:56}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;order_id&#x27;</li><li>observation schema: $: missing required property &#x27;order_id&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>order-010</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected lookup_order</li></ul></li></ul></details>
+<details><summary><code>weather-002</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected get_weather</li></ul></li></ul></details>
+<details><summary><code>weather-003</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected get_weather, got search_web</li><li>arguments: expected {&quot;city&quot;:&quot;Cairo&quot;}, got {&quot;query&quot;:&quot;What is the weather in Cairo right now?&quot;}</li><li>observation: expected {&quot;city&quot;:&quot;Cairo&quot;,&quot;condition&quot;:&quot;clear&quot;,&quot;temp_c&quot;:31}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;city&#x27;</li><li>observation schema: $: missing required property &#x27;city&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>weather-004</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>tool: expected get_weather, got search_web</li><li>arguments: expected {&quot;city&quot;:&quot;Tokyo&quot;}, got {&quot;query&quot;:&quot;Look up the current conditions for Tokyo.&quot;}</li><li>observation: expected {&quot;city&quot;:&quot;Tokyo&quot;,&quot;condition&quot;:&quot;rain&quot;,&quot;temp_c&quot;:21}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>argument schema: $: missing required property &#x27;city&#x27;</li><li>observation schema: $: missing required property &#x27;city&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>weather-014</code> <span class='fail'>0.2300</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected get_weather</li></ul></li></ul></details>
+<details><summary><code>calculate-003</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;expression&quot;:&quot;8*7&quot;}, got {}</li><li>observation: expected {&quot;expression&quot;:&quot;8*7&quot;,&quot;value&quot;:56}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;expression&#x27;</li><li>observation schema: $: missing required property &#x27;expression&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calculate-007</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;expression&quot;:&quot;2+3*4&quot;}, got {}</li><li>observation: expected {&quot;expression&quot;:&quot;2+3*4&quot;,&quot;value&quot;:14}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;expression&#x27;</li><li>observation schema: $: missing required property &#x27;expression&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calculate-015</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;expression&quot;:&quot;0-5+8&quot;}, got {}</li><li>observation: expected {&quot;expression&quot;:&quot;0-5+8&quot;,&quot;value&quot;:3}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;expression&#x27;</li><li>observation schema: $: missing required property &#x27;expression&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calendar-002</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;date&quot;:&quot;2026-03-04&quot;}, got {}</li><li>observation: expected {&quot;date&quot;:&quot;2026-03-04&quot;,&quot;events&quot;:[{&quot;time&quot;:&quot;11:00&quot;,&quot;title&quot;:&quot;Office hours&quot;}]}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;date&#x27;</li><li>observation schema: $: missing required property &#x27;date&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>calendar-005</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;date&quot;:&quot;2026-03-09&quot;}, got {}</li><li>observation: expected {&quot;date&quot;:&quot;2026-03-09&quot;,&quot;events&quot;:[{&quot;time&quot;:&quot;13:00&quot;,&quot;title&quot;:&quot;Budget check&quot;}]}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;date&#x27;</li><li>observation schema: $: missing required property &#x27;date&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>file-000</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;path&quot;:&quot;notes/readme.txt&quot;}, got {}</li><li>observation: expected {&quot;path&quot;:&quot;notes/readme.txt&quot;,&quot;text&quot;:&quot;Ship the eval before the demo.&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;path&#x27;</li><li>observation schema: $: missing required property &#x27;path&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>file-001</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;path&quot;:&quot;logs/agent.log&quot;}, got {}</li><li>observation: expected {&quot;path&quot;:&quot;logs/agent.log&quot;,&quot;text&quot;:&quot;step=3 tool=search status=ok&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;path&#x27;</li><li>observation schema: $: missing required property &#x27;path&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>file-006</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;path&quot;:&quot;plans/q3.md&quot;}, got {}</li><li>observation: expected {&quot;path&quot;:&quot;plans/q3.md&quot;,&quot;text&quot;:&quot;Hold the frontier budget flat.&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;path&#x27;</li><li>observation schema: $: missing required property &#x27;path&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>file-007</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;path&quot;:&quot;inbox/001.txt&quot;}, got {}</li><li>observation: expected {&quot;path&quot;:&quot;inbox/001.txt&quot;,&quot;text&quot;:&quot;Customer asked for a receipt.&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;path&#x27;</li><li>observation schema: $: missing required property &#x27;path&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>inventory-004</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;sku&quot;:&quot;SKU-104&quot;}, got {}</li><li>observation: expected {&quot;name&quot;:&quot;Linen tape&quot;,&quot;sku&quot;:&quot;SKU-104&quot;,&quot;stock&quot;:64}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;sku&#x27;</li><li>observation schema: $: missing required property &#x27;sku&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>inventory-015</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;sku&quot;:&quot;SKU-115&quot;}, got {}</li><li>observation: expected {&quot;name&quot;:&quot;Hemp twine&quot;,&quot;sku&quot;:&quot;SKU-115&quot;,&quot;stock&quot;:140}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;sku&#x27;</li><li>observation schema: $: missing required property &#x27;sku&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>order-003</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;order_id&quot;:&quot;A1003&quot;}, got {}</li><li>observation: expected {&quot;order_id&quot;:&quot;A1003&quot;,&quot;status&quot;:&quot;shipped&quot;,&quot;total_usd&quot;:10}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;order_id&#x27;</li><li>observation schema: $: missing required property &#x27;order_id&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>order-007</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;order_id&quot;:&quot;A1007&quot;}, got {}</li><li>observation: expected {&quot;order_id&quot;:&quot;A1007&quot;,&quot;status&quot;:&quot;processing&quot;,&quot;total_usd&quot;:33}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;order_id&#x27;</li><li>observation schema: $: missing required property &#x27;order_id&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>order-008</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;order_id&quot;:&quot;A1008&quot;}, got {}</li><li>observation: expected {&quot;order_id&quot;:&quot;A1008&quot;,&quot;status&quot;:&quot;delivered&quot;,&quot;total_usd&quot;:8}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;order_id&#x27;</li><li>observation schema: $: missing required property &#x27;order_id&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>ticket-010</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li><li>step 1: tool 0.00, exact 0.00, judge 0.00, schema 0.00<ul><li>missing step: expected assign_ticket</li></ul></li></ul></details>
+<details><summary><code>weather-000</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;city&quot;:&quot;Paris&quot;}, got {}</li><li>observation: expected {&quot;city&quot;:&quot;Paris&quot;,&quot;condition&quot;:&quot;cloudy&quot;,&quot;temp_c&quot;:18}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;city&#x27;</li><li>observation schema: $: missing required property &#x27;city&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>weather-005</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;city&quot;:&quot;Seattle&quot;}, got {}</li><li>observation: expected {&quot;city&quot;:&quot;Seattle&quot;,&quot;condition&quot;:&quot;rain&quot;,&quot;temp_c&quot;:13}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;city&#x27;</li><li>observation schema: $: missing required property &#x27;city&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>weather-007</code> <span class='fail'>0.6150</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;city&quot;:&quot;Reykjavik&quot;}, got {}</li><li>observation: expected {&quot;city&quot;:&quot;Reykjavik&quot;,&quot;condition&quot;:&quot;wind&quot;,&quot;temp_c&quot;:7}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;city&#x27;</li><li>observation schema: $: missing required property &#x27;city&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>convert-000</code> <span class='fail'>0.6290</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.70, schema 0.00<ul><li>arguments: expected {&quot;from_unit&quot;:&quot;km&quot;,&quot;to_unit&quot;:&quot;m&quot;,&quot;value&quot;:2}, got {&quot;to_unit&quot;:&quot;m&quot;,&quot;value&quot;:2}</li><li>observation: expected {&quot;converted&quot;:2000,&quot;from_unit&quot;:&quot;km&quot;,&quot;to_unit&quot;:&quot;m&quot;,&quot;value&quot;:2}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;from_unit&#x27;</li><li>observation schema: $: missing required property &#x27;value&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>convert-005</code> <span class='fail'>0.6290</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.70, schema 0.00<ul><li>arguments: expected {&quot;from_unit&quot;:&quot;g&quot;,&quot;to_unit&quot;:&quot;kg&quot;,&quot;value&quot;:2000}, got {&quot;to_unit&quot;:&quot;kg&quot;,&quot;value&quot;:2000}</li><li>observation: expected {&quot;converted&quot;:2,&quot;from_unit&quot;:&quot;g&quot;,&quot;to_unit&quot;:&quot;kg&quot;,&quot;value&quot;:2000}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;from_unit&#x27;</li><li>observation schema: $: missing required property &#x27;value&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>convert-009</code> <span class='fail'>0.6290</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.70, schema 0.00<ul><li>arguments: expected {&quot;from_unit&quot;:&quot;C&quot;,&quot;to_unit&quot;:&quot;F&quot;,&quot;value&quot;:100}, got {&quot;to_unit&quot;:&quot;F&quot;,&quot;value&quot;:100}</li><li>observation: expected {&quot;converted&quot;:212,&quot;from_unit&quot;:&quot;C&quot;,&quot;to_unit&quot;:&quot;F&quot;,&quot;value&quot;:100}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;from_unit&#x27;</li><li>observation schema: $: missing required property &#x27;value&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>fx-003</code> <span class='fail'>0.6290</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.70, schema 0.00<ul><li>arguments: expected {&quot;amount&quot;:25,&quot;dst&quot;:&quot;CAD&quot;,&quot;src&quot;:&quot;USD&quot;}, got {&quot;dst&quot;:&quot;CAD&quot;,&quot;src&quot;:&quot;USD&quot;}</li><li>observation: expected {&quot;amount&quot;:25,&quot;converted&quot;:34,&quot;dst&quot;:&quot;CAD&quot;,&quot;src&quot;:&quot;USD&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;amount&#x27;</li><li>observation schema: $: missing required property &#x27;amount&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>fx-006</code> <span class='fail'>0.6290</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.70, schema 0.00<ul><li>arguments: expected {&quot;amount&quot;:20,&quot;dst&quot;:&quot;GBP&quot;,&quot;src&quot;:&quot;EUR&quot;}, got {&quot;dst&quot;:&quot;GBP&quot;,&quot;src&quot;:&quot;EUR&quot;}</li><li>observation: expected {&quot;amount&quot;:20,&quot;converted&quot;:17,&quot;dst&quot;:&quot;GBP&quot;,&quot;src&quot;:&quot;EUR&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;amount&#x27;</li><li>observation schema: $: missing required property &#x27;amount&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li></ul></details>
+<details><summary><code>search-001</code> <span class='fail'>0.6630</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.30, schema 0.50<ul><li>tool: expected search, got search_web</li><li>arguments: expected {&quot;query&quot;:&quot;oncall paging rule&quot;}, got {&quot;query&quot;:&quot;Search for oncall paging rule, open the result, and quote it.&quot;}</li><li>observation: expected {&quot;title&quot;:&quot;Oncall runbook&quot;,&quot;url&quot;:&quot;https://example.invalid/oncall&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-002</code> <span class='fail'>0.6630</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.30, schema 0.50<ul><li>tool: expected search, got search_web</li><li>arguments: expected {&quot;query&quot;:&quot;eval file format&quot;}, got {&quot;query&quot;:&quot;Look up eval file format and report what the page says.&quot;}</li><li>observation: expected {&quot;title&quot;:&quot;Trajectory format&quot;,&quot;url&quot;:&quot;https://example.invalid/format&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-004</code> <span class='fail'>0.6630</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.30, schema 0.50<ul><li>tool: expected search, got search_web</li><li>arguments: expected {&quot;query&quot;:&quot;seed constant&quot;}, got {&quot;query&quot;:&quot;Search for seed constant, open the result, and quote it.&quot;}</li><li>observation: expected {&quot;title&quot;:&quot;Seed script&quot;,&quot;url&quot;:&quot;https://example.invalid/seed&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-006</code> <span class='fail'>0.6630</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.30, schema 0.50<ul><li>tool: expected search, got search_web</li><li>arguments: expected {&quot;query&quot;:&quot;city table header&quot;}, got {&quot;query&quot;:&quot;Find the note about city table header and quote the page.&quot;}</li><li>observation: expected {&quot;title&quot;:&quot;City table&quot;,&quot;url&quot;:&quot;https://example.invalid/cities&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-010</code> <span class='fail'>0.6630</span></summary><ul><li>step 0: tool 0.00, exact 0.00, judge 0.30, schema 0.50<ul><li>tool: expected search, got search_web</li><li>arguments: expected {&quot;query&quot;:&quot;agent log line&quot;}, got {&quot;query&quot;:&quot;Search for agent log line, open the result, and quote it.&quot;}</li><li>observation: expected {&quot;title&quot;:&quot;Agent log&quot;,&quot;url&quot;:&quot;https://example.invalid/log&quot;}, got {&quot;error&quot;:&quot;unknown tool&quot;}</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: observation overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>calculate-004</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>calendar-001</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>calendar-004</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>calendar-006</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>convert-010</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>file-004</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>file-005</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>fx-001</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>inventory-002</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>inventory-007</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>inventory-012</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>inventory-013</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>inventory-014</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>order-001</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>order-006</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-009</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>weather-008</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>weather-012</code> <span class='fail'>0.7700</span></summary><ul><li>mock judge: answer overlap 0.00</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-005</code> <span class='fail'>0.8075</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;query&quot;:&quot;receipt request&quot;}, got {}</li><li>observation: expected {&quot;title&quot;:&quot;Inbox note&quot;,&quot;url&quot;:&quot;https://example.invalid/inbox&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;query&#x27;</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-007</code> <span class='fail'>0.8075</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;query&quot;:&quot;step limit config&quot;}, got {}</li><li>observation: expected {&quot;title&quot;:&quot;Limits&quot;,&quot;url&quot;:&quot;https://example.invalid/limits&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;query&#x27;</li><li>observation schema: $: missing required property &#x27;title&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>ticket-000</code> <span class='fail'>0.8075</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;text&quot;:&quot;The app crashes when I export.&quot;}, got {}</li><li>observation: expected {&quot;priority&quot;:&quot;high&quot;,&quot;queue&quot;:&quot;engineering&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;text&#x27;</li><li>observation schema: $: missing required property &#x27;queue&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>ticket-001</code> <span class='fail'>0.8075</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;text&quot;:&quot;There is a bug in the total.&quot;}, got {}</li><li>observation: expected {&quot;priority&quot;:&quot;high&quot;,&quot;queue&quot;:&quot;engineering&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;text&#x27;</li><li>observation schema: $: missing required property &#x27;queue&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>ticket-004</code> <span class='fail'>0.8075</span></summary><ul><li>step 0: tool 1.00, exact 0.33, judge 0.50, schema 0.00<ul><li>arguments: expected {&quot;text&quot;:&quot;I cannot login to the portal.&quot;}, got {}</li><li>observation: expected {&quot;priority&quot;:&quot;high&quot;,&quot;queue&quot;:&quot;access&quot;}, got {&quot;error&quot;:&quot;missing required argument&quot;}</li><li>argument schema: $: missing required property &#x27;text&#x27;</li><li>observation schema: $: missing required property &#x27;queue&#x27;</li><li>mock judge: arguments overlap 0.00</li></ul></li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>search-003</code> <span class='fail'>0.8083</span></summary><ul><li>mock judge: answer overlap 0.17</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<details><summary><code>ticket-011</code> <span class='fail'>0.8083</span></summary><ul><li>mock judge: answer overlap 0.17</li></ul><ul><li>step 0: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li><li>step 1: tool 1.00, exact 1.00, judge 1.00, schema 1.00</li></ul></details>
+<footer>Synthetic trajectories. The mock judge is lexical overlap, not a language model. Scores are measurements of the agents in this repository against the committed golden file.</footer>
+</main>
+</body>
+</html>

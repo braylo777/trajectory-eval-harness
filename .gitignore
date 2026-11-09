@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.walkthroughs/
+.DS_Store
+results/ci-sample.json
+results/ci-regressed.json

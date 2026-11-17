@@ -39,8 +39,8 @@ def test_report_escapes_html_and_labels_the_mock_judge():
     assert "0.2000" in page
 
 
-def test_committed_sample_report_lists_every_golden_id():
-    page = (ROOT / "results" / "sample-report.html").read_text(encoding="utf-8")
+def test_generated_sample_report_lists_every_golden_id(reports):
+    page = (reports / "sample-report.html").read_text(encoding="utf-8")
     assert "synthetic" in page
     assert "mock judge" in page
     assert "Every trajectory in this run scored 1.0000." in page
@@ -48,9 +48,9 @@ def test_committed_sample_report_lists_every_golden_id():
         assert row["id"] in page
 
 
-def test_diff_report_names_a_regressed_trajectory():
+def test_diff_report_names_a_regressed_trajectory(reports):
     diff = load_json(ROOT / "results" / "diff.json")
-    page = (ROOT / "results" / "diff-report.html").read_text(encoding="utf-8")
+    page = (reports / "diff-report.html").read_text(encoding="utf-8")
     assert diff["n_regressed"] > 0
     assert diff["regressed"][0]["id"] in page
     assert "synthetic" in page

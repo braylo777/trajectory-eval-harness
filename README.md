@@ -41,7 +41,7 @@ If a golden step has no schema, that weight is redistributed. Scores are rounded
 
 ## Results
 ### Sample agent against the golden file — SYNTHETIC
-Run: `python3 bench/run_eval.py`. Raw output: [`results/measurements.json`](results/measurements.json), [`results/baseline.json`](results/baseline.json), [`results/regressed.json`](results/regressed.json). HTML: [`results/sample-report.html`](results/sample-report.html), [`results/regressed-report.html`](results/regressed-report.html), [`results/diff-report.html`](results/diff-report.html).
+Run: `python3 bench/run_eval.py`. Raw output: [`results/measurements.json`](results/measurements.json), [`results/baseline.json`](results/baseline.json), [`results/regressed.json`](results/regressed.json). HTML reports (sample, regressed, diff) are generated into `results/` by `python3 bench/run_eval.py` and are not committed.
 
 132 trajectories expanded from 10 families (weather, file, calculate, search, calendar, inventory, convert, ticket, order, fx). Every record is `source: "synthetic"`. The world is a fixture: temperatures, stock counts, and currency rates are values chosen so the arithmetic is exact, not quotes from a live system. The judge is the mock. No model was called.
 
@@ -107,7 +107,7 @@ python3 -m trajeval gate --baseline results/baseline.json --current results/base
 To score your own traces, write a JSONL file in the same shape and pass `--candidate` instead of `--agent`.
 
 ## CI gate
-[`.github/workflows/eval-gate.yml`](.github/workflows/eval-gate.yml) runs [`scripts/ci.sh`](scripts/ci.sh) on pull requests and on pushes to `main`. The script tests, scores the sample agent, and runs the gate against `results/baseline.json` with `--max-drop 0.01`. A drop greater than 0.01 fails the job. The same script then scores the regressed agent and fails the job if that gate returns success, so a gate weakened to always pass is also a red build.
+[`.github/workflows/eval-gate.yml`](.github/workflows/eval-gate.yml) runs [`scripts/ci.py`](scripts/ci.py) on pull requests and on pushes to `main`. The script tests, scores the sample agent, and runs the gate against `results/baseline.json` with `--max-drop 0.01`. A drop greater than 0.01 fails the job. The same script then scores the regressed agent and fails the job if that gate returns success, so a gate weakened to always pass is also a red build.
 
 The gate compares a fresh run to the committed baseline. Updating the agent and the baseline in the same PR makes the gate pass. Review baseline diffs.
 

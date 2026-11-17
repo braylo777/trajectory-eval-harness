@@ -57,12 +57,12 @@ def test_cli_rejects_agent_and_candidate_together(tmp_path):
 
 def test_workflow_gates_the_sample_agent_and_requires_the_regressed_failure():
     workflow = (ROOT / ".github" / "workflows" / "eval-gate.yml").read_text(encoding="utf-8")
-    script = (ROOT / "scripts" / "ci.sh").read_text(encoding="utf-8")
+    script = (ROOT / "scripts" / "ci.py").read_text(encoding="utf-8")
     assert "pull_request" in workflow
-    assert "bash scripts/ci.sh" in workflow
+    assert "python scripts/ci.py" in workflow
     assert "python-version: \"3.12\"" in workflow
-    assert "--agent sample" in script
-    assert "--agent regressed" in script
-    assert "--baseline results/baseline.json" in script
-    assert "--max-drop 0.01" in script
+    assert '"--agent", "sample"' in script
+    assert '"--agent", "regressed"' in script
+    assert '"--baseline", "results/baseline.json"' in script
+    assert '"--max-drop", "0.01"' in script
     assert "expected the regressed agent to fail the gate" in script
